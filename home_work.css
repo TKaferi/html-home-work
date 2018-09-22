@@ -1,40 +1,85 @@
 header {
     background-color: #bababc; 
-    height: 100px;
 }
 
-.num {
+html, body{
+    height: 100%;
+    min-height: 100%;
+}
+
+.header {
+    padding: 15px;
+
+}
+.header .logo {
+    font-size: 15px;
+    display: block;
+    float: left;
+    text-decoration: none;
+    margin-left: 360px;
+   
+}
+.header .num {
     float: right;
-    margin-top: 38px;
-    margin-right: 10px;
+    margin-right: 45px;
+    margin-top: 10px;
 }
 
+.clearfix:after {
+    content: '';
+    display: block;
+    clear: both;
+  }
 h1   {
     text-transform: uppercase;
-    margin-left: auto;
-    margin-right: auto;
-    width: 4em;
-    line-height: 3em;
+    
 }
 
 
 nav {
-    height: 100px;
     background-color: #fe9c9d;
-    padding-top: 1%;
-    padding-left: 4%;
-    text-align: right;
+    height: 85px;
+    padding: 15px;
+}
+
+.logo1 {
+    width: 100px;
+    padding: 15px;
+}
+
+.logo2 {
+    display: block;
+    float: left;
+    margin-top: 10px;
 }
     
-
-.first {
-    width: 100%;
-    height: 77%;
-    background: white;
+.contacts .logo {
+    float: right;
+    margin-right: 15px;
+    text-decoration: none;
+    font-weight: bold;
 }
 
+.first {
+    
+    background: white;
+    height: 720px;
+}
+.second {
+    height: 620px; 
+}
+
+.hedgehog .logo2 {
+    display: block;
+    float: left;
+    margin-top: 10px;
+    width: 200px;
+    height: 200px;
+
+}
 aside {
     background-color: #9299f4;
+    float: right;
 }
 
 .subfooter {
@@ -43,13 +88,18 @@ aside {
 
 footer {
     background-color: #d2f388;
+    height: 70px;
+   
 }
+
+
+
+
 
 * {
     font-family: 'Raleway', sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
-.nav {
-    float: left;
-}
 
