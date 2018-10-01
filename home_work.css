@@ -1,5 +1,18 @@
 header {
-    background-color: #bababc; 
+    background-color: #bababc;
+    display: flex;
+    height: 75px;
+    justify-content: center
+}
+
+h1   {
+    text-transform: uppercase;
+    margin: auto;  
+}
+
+.num{
+    align-self: center;
+    margin-right: 15px;
 }
 
 html, body{
@@ -7,79 +20,40 @@ html, body{
     min-height: 100%;
 }
 
-.header {
-    padding: 15px;
-
-}
-.header .logo {
-    font-size: 15px;
-    display: block;
-    float: left;
-    text-decoration: none;
-    margin-left: 360px;
-   
-}
-.header .num {
-    float: right;
-    margin-right: 45px;
-    margin-top: 10px;
-}
-
-.clearfix:after {
-    content: '';
-    display: block;
-    clear: both;
-  }
-h1   {
-    text-transform: uppercase;
-    
-}
-
-
 nav {
     background-color: #fe9c9d;
     height: 85px;
-    padding: 15px;
+    padding: 15px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.logo1 {
-    width: 100px;
-    padding: 15px;
-}
-
-.logo2 {
-    display: block;
-    float: left;
-    margin-top: 10px;
+.logo1{
+    font-weight: bold; 
+    margin-bottom: 10px;
 }
     
-.contacts .logo {
-    float: right;
-    margin-right: 15px;
+.contacts .logo  {
     text-decoration: none;
     font-weight: bold;
+    margin-right:35px;
 }
 
-.first {
-    
-    background: white;
-    height: 720px;
-}
 .second {
     height: 620px; 
+    display: flex;
+    justify-content: space-between;
 }
 
-.hedgehog .logo2 {
-    display: block;
-    float: left;
-    margin-top: 10px;
-    width: 200px;
-    height: 200px;
+.hedgehog {
+    display: flex; 
+     
 
 }
 aside {
     background-color: #9299f4;
-    float: right;
+   
 }
 
 .subfooter {
