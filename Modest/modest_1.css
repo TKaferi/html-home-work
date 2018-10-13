@@ -442,8 +442,183 @@ body {
 	cursor: pointer;
 }
 
+.section-work .show{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-top:50px;
+}
+
+.section-work .button {
+	display: block;
+	padding: 15px 0px;
+	color: #fff;
+	border: 2px solid #fff;
+	text-transform: uppercase;
+	border-radius: 4px;
+	font-size: 14px;
+	background: none;
+	min-width: 150px;
+	
+}
+
+.section-we-do {
+	padding: 70px 0;
+}
+
+.section-we-do .row {
+	display: flex;
+	margin-bottom: 70px;
+}
+
+.section-we-do .item {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding-left: 30px;
+}
+
+.section-we-do .item:first-child {
+	padding-left: 0;
+}
 
 
+.section-we-do .item-title {
+	font-size: 17px;
+	color: #292f36;
+	text-transform: uppercase;
+	margin: 30px 0;
+}
+
+.section-we-do .item-text {
+	font-size: 16px;
+	color: #8d8f92;
+	line-height: 24px;
+}
+
+.section-features {
+    background-color: #3a454d;
+    padding: 70px 0;
+}
+
+.section-features .section-title {
+    color: #fff;
+}
+
+.section-features .boxes {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -15px;
+}
+
+.section-features .boxes .box {
+    margin: 0 15px;
+}
+
+.section-features .row {
+	display: flex;
+}
+
+.section-features .item {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start	;
+	padding-left: 30px;
+	margin-top: 20px;
+	flex: 1;
+}
+
+.section-features .item:first-child {
+	padding-left: 0;
+}
+
+.section-features .item-title {
+	font-size: 17px;
+	color: #dcdfe1;
+	text-transform: uppercase;
+	margin: 30px 0;
+}
+
+.section-features .item-text {
+	font-size: 16px;
+	color: #dcdfe1;
+	line-height: 24px;
+}
+
+.section-touch {
+	padding: 70px 0;
+}
+
+.section-touch .map {
+	height: 345px;
+	background: url('./images/map.jpg') no-repeat center center;
+	background-size: cover;
+}
+.section-touch .item {
+	width:  550px;
+}
+
+.section-touch .item-title {
+	font-size: 17px;
+	color: #292f36;
+	text-transform: uppercase;
+	margin: 40px 0;
+}
+
+.section-touch .item-text {
+	font-size: 16px;
+	color: #8d8f92;
+	line-height: 24px;
+	margin-bottom: 40px;
+}
+
+.section-touch .form {
+	width: 560px;
+	height: 400px;
+	background-color: #fff;	
+	padding: 30px;
+}
+
+.section-touch .form-name {
+	display: flex;
+	justify-content: space-between;
+
+}
+
+.section-touch .form .item-title {
+	color: #8d8f92;
+	font-size: 14px;
+	margin-bottom: 10px;
+}
+
+.section-touch .input {
+	height: 45px;
+	width: 260px;
+	background-color: #eaeef1;
+	border-radius: 2px;
+	border-color:#eaeef1;
+}
+
+.section-touch  .message .input {
+	height: 150px;
+	width: 553px;
+	background-color: #eaeef1;
+	border-radius: 2px;
+	border-color:#eaeef1;
+	margin-bottom: 30px;
+}
+
+.section-touch .button {
+    display: block;
+    padding: 15px 0px;
+    color: #fff;
+    border: 2px solid #23b7a4;
+    text-transform: uppercase;
+    border-radius: 4px;
+    font-size: 14px;
+    background: #23b7a4;
+    min-width: 150px;
+}
 
 @media (max-width: 1100px) {
 	.section-team .boxes {
