@@ -549,6 +549,10 @@ body {
 	padding: 70px 0;
 }
 
+.section-touch .wrapper {
+	display: flex;
+}
+
 .section-touch .map {
 	height: 345px;
 	background: url('./images/map.jpg') no-repeat center center;
@@ -577,6 +581,7 @@ body {
 	height: 400px;
 	background-color: #fff;	
 	padding: 30px;
+	margin-top: -130px;
 }
 
 .section-touch .form-name {
@@ -596,7 +601,7 @@ body {
 	width: 260px;
 	background-color: #eaeef1;
 	border-radius: 2px;
-	border-color:#eaeef1;
+	border: 0;
 }
 
 .section-touch  .message .input {
@@ -604,7 +609,7 @@ body {
 	width: 553px;
 	background-color: #eaeef1;
 	border-radius: 2px;
-	border-color:#eaeef1;
+	border: 0;
 	margin-bottom: 30px;
 }
 
