@@ -1,16 +1,30 @@
 @import './base/_base.scss';
 
+/*---THEEME---*/
+@import './theeme/_wrapper.scss';
+
+
 /*---LAYOUTS---*/
 @import './layout/_header.scss';
+
 
 /*---MODULES---*/
 @import './modules/_banner.scss';
 
-/*---SECTION-MODEST---*/
-@import './modules/_section-modest.scss';
+/*---MODEST---*/
+@import './modules/_modest.scss';
 
-/*---SECTION-TEAM---*/
-@import './modules/_section-team.scss';
+/*---TEAM---*/
+@import './modules/_team.scss';
 
-/*---SECTION-WORK---*/
-@import './modules/_section-work.scss';
+/*---WORK---*/
+@import './modules/_work.scss';
+
+/*---WE-DO---*/
+@import './modules/_we-do.scss';
+
+/*---FEATURES---*/
+@import './modules/_features.scss';
+
+/*---TOUCH---*/
+@import './modules/_touch.scss';

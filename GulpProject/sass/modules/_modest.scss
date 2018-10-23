@@ -3,11 +3,21 @@
     border-bottom: 1px solid #dde1e4;    
     .row {
         display: flex;
+        @media (max-width: 1100px) {
+            flex-wrap: wrap;
+		    flex-direction: column;
+        }
     }
     .col {
         flex: 1;
         &:last-child{
             margin-left: 30px;
+            @media (max-width: 1100px) {
+                margin-bottom: 20px;
+                &:last-child {
+                    margin-left: 0; 
+                } 
+            }
         }
     }
     .text {
@@ -70,22 +80,11 @@
         }
         
     }
-}
-.wrapper {
-	padding: 0 15px;
-	width: 100%;
-	max-width: 1160px;
-	margin: 0 auto;
+    @media (max-width: 768px) {
+        padding: 30px 0;
+    }
 }
 
-.section-title {
-	padding-left: 10px;
-	font-size: 36px;
-	color: #292f36;
-	margin-bottom: 50px;
-	text-transform: uppercase;
-	border-left: 10px solid #e1e6ea; 
-}
 
 
 

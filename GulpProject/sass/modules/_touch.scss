@@ -1,0 +1,84 @@
+.section-touch {
+    padding: 70px 0;
+    .wrapper {
+        display: flex;
+        @media (max-width: 768px) {
+            flex-direction: column;
+        }
+    }
+    .map {
+        height: 345px;
+        background: url('../images/map.jpg') no-repeat center center;
+        background-size: cover;
+    }
+    .item {
+        flex: 1;
+        @media (max-width: 768px) {
+            padding: 30px; 
+        }
+    }
+    .item-title {
+        font-size: 17px;
+        color: #292f36;
+        text-transform: uppercase;
+        margin: 40px 0;
+    }
+    .item-text {
+        font-size: 16px;
+        color: #8d8f92;
+        line-height: 24px;
+        margin-bottom: 40px;
+    }
+    .form {
+        flex:1;
+        height: 400px;
+        background-color: #fff;	
+        padding: 30px;
+        margin-top: -130px;
+        @media (max-width: 768px) {
+            margin-top: none;
+        }
+        .item-title {
+            color: #8d8f92;
+            font-size: 14px;
+            margin-bottom: 10px;
+        }
+    }
+    .form-name {
+        display: flex;
+        justify-content: space-between;
+        .item-form {
+            flex:1;
+            &:first-child { 
+                margin-right: 15px;
+            }
+            .input {
+                height: 45px;
+                width: 100%;
+                flex: 1;
+                background-color: #eaeef1;
+                border-radius: 2px;
+                border: 0;
+            }
+        }
+    }
+    .message .input {
+        height: 150px;
+        width: 100%;
+        background-color: #eaeef1;
+        border-radius: 2px;
+        border: 0;
+        margin-bottom: 30px;
+    }
+    .button {
+        display: block;
+        padding: 15px 0px;
+        color: #fff;
+        border: 2px solid #23b7a4;
+        text-transform: uppercase;
+        border-radius: 4px;
+        font-size: 14px;
+        background: #23b7a4;
+        min-width: 150px;
+    }
+}
