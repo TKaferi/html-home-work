@@ -1,6 +1,17 @@
 .focus {
   padding:150px 15px;
-  background-color: #f7f7f7;
+  position: relative;
+  background: url('../../img/02.jpg') no-repeat center top ;
+  &:after {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.4;
+    content: '';
+    background:#f7f7f7;
+  }
   &__header {
     display: flex;
     flex-direction: column;

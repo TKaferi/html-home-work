@@ -194,7 +194,17 @@ body {
 
 .focus {
   padding: 150px 15px;
-  background-color: #f7f7f7; }
+  position: relative;
+  background: url("../../img/02.jpg") no-repeat center top; }
+  .focus:after {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.4;
+    content: '';
+    background: #f7f7f7; }
   .focus__header {
     display: flex;
     flex-direction: column;
@@ -244,8 +254,40 @@ body {
       color: #616161;
       line-height: 24px; }
 
+.explore {
+  height: 500px;
+  position: relative;
+  background: url("../../img/background-image3.jpg") no-repeat center center; }
+  .explore__video {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 150px 0;
+    position: relative;
+    z-index: 1; }
+  .explore__title {
+    font-size: 30px;
+    color: #fff;
+    margin-bottom: 40px; }
+  .explore__text {
+    font-size: 15px;
+    color: #fff;
+    margin-top: 40px; }
+  .explore:after {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.8;
+    content: '';
+    background: #3f4049; }
+
 .wrapper {
   padding: 0 15px;
   width: 100%;
   max-width: 1160px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  position: relative;
+  z-index: 1; }
