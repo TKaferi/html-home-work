@@ -384,14 +384,16 @@ body {
     margin-bottom: 80px; }
   .team__boxes {
     display: flex;
-    align-items: center; }
+    align-items: center;
+    justify-content: space-between; }
   .team__box {
     display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: center;
     background-color: #ffff;
-    max-width: 270px;
+    margin-right: 20px;
+    max-width: 265px;
     max-height: 352px;
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.15);
     border-bottom: solid 3px; }
@@ -399,22 +401,125 @@ body {
       margin-right: 0; }
     .team__box .text {
       font-size: 13px;
-      color: #616161; }
+      color: #616161;
+      margin: 15px 0; }
+    .team__box .title {
+      margin-top: 20px;
+      font-size: 18px; }
     .team__box.orange {
       border-bottom-color: #fc5f45; }
       .team__box.orange .title {
-        color: #fc5f45;
-        font-size: 18px; }
+        color: #fc5f45; }
+      .team__box.orange .img:after {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0.4;
+        content: '';
+        background: linear-gradient(to top, #fc5f45, #c6c5c5); }
     .team__box.green {
       border-bottom-color: #38c695; }
+      .team__box.green .title {
+        color: #38c695; }
+      .team__box.green .img:after {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0.4;
+        content: '';
+        background: linear-gradient(to top, #38c695, #c6c5c5); }
     .team__box.purpure {
       border-bottom-color: #b27cf5; }
+      .team__box.purpure .title {
+        color: #b27cf5; }
+      .team__box.purpure .img:after {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0.4;
+        content: '';
+        background: linear-gradient(to top, #b27cf5, #c6c5c5); }
     .team__box.yellow {
       border-bottom-color: #feb960; }
+      .team__box.yellow .title {
+        color: #feb960; }
+      .team__box.yellow .img:after {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0.4;
+        content: '';
+        background: linear-gradient(to top, #feb960, #c6c5c5); }
     .team__box .img {
-      height: 260px; }
+      height: 260px;
+      border: solid 5px;
+      border-color: #ffff;
+      position: relative; }
       .team__box .img img {
         object-fit: contain; }
+  .team .about {
+    display: flex;
+    flex-direction: column;
+    background-color: #ffff;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.15);
+    margin-top: 45px;
+    padding: 100px 80px;
+    position: relative; }
+    .team .about:after {
+      content: '';
+      top: 0%;
+      left: 10%;
+      width: 40px;
+      height: 40px;
+      box-shadow: -5px -5px 10px rgba(0, 0, 0, 0.1);
+      background: #ffff;
+      position: absolute;
+      transform: translateY(-50%) rotate(45deg); }
+    .team .about__header {
+      font-size: 20px;
+      padding-bottom: 35px;
+      font-weight: 600;
+      color: #313131; }
+    .team .about__box {
+      display: flex; }
+      .team .about__box .text {
+        font-size: 15px;
+        color: #616161;
+        line-height: 24px; }
+    .team .about__text {
+      flex: 3; }
+    .team .about__img {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center; }
+    .team .about__social {
+      display: flex;
+      align-items: center;
+      font-size: 15px;
+      color: #616161;
+      line-height: 24px;
+      border-left: solid 2px;
+      border-left-color: #efefef;
+      padding-left: 40px; }
+      .team .about__social li {
+        list-style-type: none; }
+    .team .about__f {
+      list-style-image: url("../../img/f.png"); }
+    .team .about__tw {
+      list-style-image: url("../../img/team_tw.png"); }
+    .team .about__lin {
+      list-style-image: url("../../img/link.png"); }
+    .team .about__inst {
+      list-style-image: url("../../img/inst.png"); }
 
 .wrapper {
   padding: 0 15px;
