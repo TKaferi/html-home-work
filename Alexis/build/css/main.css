@@ -520,6 +520,18 @@ body {
       list-style-image: url("../../img/link.png"); }
     .team .about__inst {
       list-style-image: url("../../img/inst.png"); }
+  .team #about__green {
+    display: none; }
+    .team #about__green:after {
+      content: '';
+      top: 0%;
+      left: 35%;
+      width: 40px;
+      height: 40px;
+      box-shadow: -5px -5px 10px rgba(0, 0, 0, 0.1);
+      background: #ffff;
+      position: absolute;
+      transform: translateY(-50%) rotate(45deg); }
 
 .wrapper {
   padding: 0 15px;
