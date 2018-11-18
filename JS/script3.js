@@ -128,25 +128,18 @@ function sumNumber(num) {
 document.write('Cумма чисел = ' + sumNumber(24500081) + '<br />');
 
 
-//Кооличество дней в году.
+//Количество дней в году.
 
-function leapYear(num) {
-var res = 0;
-res = num % 400;
-if ( res > 0){
-  document.write(' Количество дней в этом году - 365');
-  } else {
-  document.write(' Количество дней в этом году - 366' + '<br />' + ' этот год - високосный');
-  }
+
+function isYearLeap(year) {
+  if (year % 400 == 0) return true;
+  if (year % 100 == 0) return false;
+  if (year % 4 == 0) return true;
+  return false;
 }
 
-leapYear(2019);
-
-
-
-
-
-
-
+function isYearLeapOne(year) {
+  return year % 400 == 0 || year % 4 == 0 && year % 100 != 0;
+}
 
 
