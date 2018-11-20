@@ -1,0 +1,23 @@
+<script>
+    var salaries = [1200, 2000, 5000];
+
+    var summ = 0;
+    var average = 0;
+
+    function sum(item, i, arr) {
+        summ += item;
+    }
+
+    function avg(item, i, arr) {
+        average += item / arr.length;
+    }
+
+    function log(item, w, r, y, o, u) {
+        console.log(y);
+    }
+    salaries.forEach(log);
+    
+    console.log("summ = " + summ);
+    console.log("average = " + average);
+    
+</script>
