@@ -118,12 +118,11 @@ function validate(user) {
   if (isNaN(user.age)){
     return 'insert the number'
   } 
-  /*if(user.settings.length > 0){
+  /*
     user.setting.map(function(item){
       if (isEmpty(item.settingsName)){
         return 'Settings Name is empty'
-      }
-    })  
+      }  
   }*/
   return '';
 }
