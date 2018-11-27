@@ -75,6 +75,59 @@ function getValue(arr, key) {
 var val =  getValue(arr1, key1);
 console.log('Ключу ' + key1 + ' соответствует значение: ' + val);
 
+// 5. сделать валидацию полей.
+
+var user1 = {
+  first_name: 'Петя',
+  last_name: 'Петров',
+  age: 25,
+  settings: [
+    {
+      settingsName: 'subscription',
+      products: ['DIY', 'NEWS'],
+    },
+  ],
+};
+
+var user2 = {
+  first_name: 'Вася',
+  last_name: '',
+  age: 'Вася',
+  settings: [
+    {
+      settingsName: '',
+      products: [],
+    },
+  ],
+};
+
+function isEmpty(str){
+  return !(('' + str).trim());
+}
+
+function validate(user) {
+  if (isEmpty(user.first_name)){
+    return 'First Name is empty'
+  }
+  if (isEmpty(user.last_name)){
+    return 'Last Name is empty'
+  }
+  if (isEmpty(user.age)){
+    return 'Age is empty'
+  }
+  if (isNaN(user.age)){
+    return 'insert the number'
+  } 
+  /*if(user.settings.length > 0){
+    user.setting.map(function(item){
+      if (isEmpty(item.settingsName)){
+        return 'Settings Name is empty'
+      }
+    })  
+  }*/
+  return '';
+}
+
 
 
 

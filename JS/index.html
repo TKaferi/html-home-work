@@ -13,6 +13,25 @@
   <!--<script  src="script3.js"></script>-->
   <!--<script  src="script_arrays.js"></script>-->
   <script  src="script_objects.js"></script>
-    
+  <script>
+    function validateForm() {
+      var user = {
+        first_name: document.forms[0].fn.value,
+        last_name: document.forms[0].ln.value,
+        age: document.forms[0].age.value,
+        settingsName: document.forms[0].sn.value,
+      }
+      document.getElementById('span_err').innerText = validate(user);
+    }
+  </script>
+  <form>
+    First Name: <input type="text" name="fn"><br />
+    Last Name: <input type="text" name="ln"><br />
+    Age: <input type="text" name="age"><br />
+    settingsName: <input type="text" name="sn"><br />
+    <span id='span_err' style="color: red;"></span><br />
+    <input type="button" value="отправить" onclick="validateForm()">
+
+  </form>
 </body>
 </html>
