@@ -101,31 +101,32 @@ var user2 = {
   ],
 };
 
-function isEmpty(str){
+/*function isEmpty(str){
   return !(('' + str).trim());
-}
+}*/
 
 function validate(user) {
-  if (isEmpty(user.first_name)){
+  if (!user.first_name.length) {
     return 'First Name is empty'
   }
-  if (isEmpty(user.last_name)){
+  if (!user.last_name.length){
     return 'Last Name is empty'
   }
-  if (isEmpty(user.age)){
+  if (!user.age.length){
     return 'Age is empty'
   }
   if (isNaN(user.age)){
-    return 'insert the number'
+    return 'insert the number';
   } 
-  /*
-    user.setting.map(function(item){
-      if (isEmpty(item.settingsName)){
-        return 'Settings Name is empty'
+    user.settings.map(function(item){
+      if (!item.settingsName.length) {
+        return 'Settings Name is empty';
       }  
-  }*/
-  return '';
-}
+       if (item.products.length == 0){
+      return 'Settings Name is empty';
+    }
+    });
+  }
 
 
 
