@@ -1,0 +1,35 @@
+.calc {
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+  align-items: center;
+  margin: auto;
+}
+
+.enter {
+  margin: 20px;
+}
+.btn {
+  display: flex;
+  justify-content: space-between;
+
+}
+button{
+  margin: 0 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  height: 30px;
+  width: 30px;
+}
+
+input {
+  font-size: 22px;
+  height: 30px;
+  width: 90px;
+}
+
+.res {
+  margin: 20px;
+}

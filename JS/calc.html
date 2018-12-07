@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="calc.css">
+  <script src="calc.js"></script>
+  <title>Calc</title>
+</head>
+
+<body>
+  <form>
+    <div class="calc">
+      <div class="enter">
+        <input type="text" name="firstNum" value="10">
+        <input type="text" name="secondNum" value="5">
+      </div>
+      <div class="btn">
+        <button class="plus" onclick="plus(); return false;"> + </button>
+        <button class="minus"> - </button>
+        <button class="divide"> / </button>
+        <button class="times"> * </button>
+      </div>
+      <div class="res">
+        <input type="text" name="result" readonly="readonly">
+      </div>
+    </div>
+  </form>
+  <script>
+    var btnMinus = document.getElementsByClassName("minus")[0];
+    btnMinus.onclick = function () {
+      var first = parseFloat(document.forms[0]['firstNum'].value);
+      var second = parseFloat(document.forms[0]['secondNum'].value);
+      document.forms[0]['result'].value = first - second;
+      return false;
+    }
+
+    var btnDivide = document.getElementsByClassName("divide")[0];
+    btnDivide.addEventListener("click", division);
+    function division(event) {
+      var first = parseFloat(document.forms[0]['firstNum'].value);
+      var second = parseFloat(document.forms[0]['secondNum'].value);
+      document.forms[0]['result'].value = first / second;
+      event.preventDefault();
+    }
+    
+    var btnTimes = document.getElementsByClassName("times")[0];
+    btnTimes.addEventListener("click", multiply);
+    function multiply(event) {
+      var first = parseFloat(document.forms[0]['firstNum'].value);
+      var second = parseFloat(document.forms[0]['secondNum'].value);
+      document.forms[0]['result'].value = first * second;
+      event.preventDefault();
+    }
+  </script>
+</body>
+
+</html>
