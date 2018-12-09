@@ -1,0 +1,11 @@
+#square {
+    margin: 25px 25px;
+    position: absolute;
+    background-color: darkseagreen;
+    height: 50px;
+    width: 100px;
+    top: 100px;
+}
+#skrolled {
+    position: relative;
+}

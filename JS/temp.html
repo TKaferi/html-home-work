@@ -1,4 +1,4 @@
-<script>
+<!--<script>
     var salaries = [1200, 2000, 5000];
 
     var summ = 0;
@@ -20,4 +20,44 @@
     console.log("summ = " + summ);
     console.log("average = " + average);
     
+</script>!-->
+<link rel="stylesheet" href="temp.css">
+
+<button>hello</button>
+<a href="https://google.com"> привет</a>
+<div id="skrolled" style="height: 2000px;">
+    <div id="square">
+
+    </div>
+</div>
+
+<script>
+    window.onscroll = function() {
+        var currentScroll = window.pageYOffset;
+        var square = document.getElementById('square');
+        
+        square.innerHTML = currentScroll + 'px';
+        square.style.top = (105 + currentScroll) + 'px';
+        
+    }
+
+
+
+    var button = document.getElementsByTagName('button')[0];
+    var link = document.querySelector('a');
+    link.addEventListener('click', hello);
+
+    /*button.onclick = function() {
+        alert('Hello');
+    }
+    button.oncontextmenu = function () {
+        alert('Bye');
+    }*/
+    button.addEventListener('click', hello);
+    /*button.addEventListener('contextmenu', bye);/**/
+
+    function hello(event) {
+        event.preventDefault();
+        alert('Hello');
+    }
 </script>
