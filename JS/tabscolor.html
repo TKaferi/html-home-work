@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tabs</title>
+    <style>
+        .nav-item {
+            height: 200px;
+            display: none;
+        }
+        .show {
+            display: block;
+        }
+        .div-red {
+            background-color: red;
+        }
+        .div-green {
+            background-color: green;
+        }
+        .div-blue {
+            background-color: blue;
+        }
+        ul li{
+            font-weight: bold;
+            display: inline;
+            color: gray;
+        }
+        
+        a {
+            color: gray;
+        }
+        
+
+        li .active{
+            color: blue;
+        }
+
+    </style>
+    
+</head>
+<body>
+    
+    <ul>
+       <li><a href="#" class="active">Red</a></li>
+       <li><a href="#">Green</a></li> 
+       <li><a href="#">Blue</a></li>
+    </ul>
+    <nav>
+        <div class="nav-item div-red show"></div>
+        <div class="nav-item div-green"></div>
+        <div class="nav-item div-blue"></div>
+    </nav>
+    <script>
+        var as = document.getElementsByTagName('a');
+        for (var i = 0; i < as.length; i++) {
+            as[i].onclick = tabClick;
+        }
+
+        function tabClick(event) {
+            var as = document.getElementsByTagName('a');
+            for (var i = 0; i < as.length; i++) {
+                as[i].classList.remove('active');
+            }
+            event.currentTarget.classList.add("active");
+
+            var navs = document.getElementsByClassName("nav-item");
+            for (var i =0; i < navs.length; i++) {
+                navs[i].classList.remove('show');
+            }
+            var activeNav = document.getElementsByClassName("div-" + event.currentTarget.innerText.toLowerCase())[0].classList.add('show');
+        }
+    </script>
+</body>
+</html>
+
+
+
