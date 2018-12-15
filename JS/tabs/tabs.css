@@ -50,7 +50,7 @@
   .itemTab.show {
     display: block;
   }
-  .item-text {
+  p {
     font-size: 16px;
     color: #484879;
     line-height: 24px;
