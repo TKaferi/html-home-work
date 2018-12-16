@@ -47,11 +47,45 @@ var test = fetch("https://jsonplaceholder.typicode.com/users")
     const elem3 = document.querySelector(".item3");
     users.forEach(element => {
       var div = document.createElement("p");
-      div.innerHTML = element.company.name;
+      div.innerHTML = companyToString(element.company);
       elem3.appendChild(div);
     })
   });
 
+  function companyToString(company) {
+    return company.name + ",  " + company.catchPhrase + ", ";
+  }
+
+  var login = document.querySelector(".login");
+  var pass = document.querySelector(".password");
+  var submit = document.querySelector(".submit");
+
+  submit.onclick = function sendToServer () {
+    if (login.value && pass.value) {
+     
+      fetch ('http://5c164f89e6694800138963b5.mockapi.io/api/v1/Brain_test', {
+            method: 'POST',
+            headers: {
+                'Accept': 'application/json',
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({ 
+                login: login.value, 
+                password: pass.value 
+            })
+        })
+        .then(response => response.json())
+        .then(data => {
+          console.log(data);
+        });
+    } else {
+        alert('enter login and password');
+    }
+};
+    
+  
+
+  
 
 
 
