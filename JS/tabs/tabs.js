@@ -44,19 +44,19 @@ var test = fetch("https://jsonplaceholder.typicode.com/users")
       div.innerHTML = element.email;
       elem2.appendChild(div);
     })
-    const elem3 = document.querySelector(".item3");
+    /*const elem3 = document.querySelector(".item3");
     users.forEach(element => {
       var div = document.createElement("p");
       div.innerHTML = companyToString(element.company);
       elem3.appendChild(div);
-    })
+    })*/
   });
 
   function companyToString(company) {
     return company.name + ",  " + company.catchPhrase + ", ";
   }
 
-  var login = document.querySelector(".login");
+  /*var login = document.querySelector(".login");
   var pass = document.querySelector(".password");
   var submit = document.querySelector(".submit");
 
@@ -81,13 +81,24 @@ var test = fetch("https://jsonplaceholder.typicode.com/users")
     } else {
         alert('enter login and password');
     }
-};
-    
-  
+};*/
 
-  
-
-
-
-
-
+$(document).ready(function() {
+  $('.owl-carousel').owlCarousel({
+    items: 1,
+    loop: true,
+    nav: true,
+    dots: true,
+    /*responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:3
+        },
+        1000:{
+            items:5
+        }
+    }*/
+  })
+});
