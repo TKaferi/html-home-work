@@ -1,0 +1,76 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 40vmin;
+}
+
+.App-header {
+  background-color: #282c34;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+
+.f {
+list-style-image:url('/img/f.png') 
+}
+.tw {
+list-style-image:url('/img/team_tw.png') 
+}
+.lin {
+list-style-image:url('/img/link.png') 
+}
+.inst {
+list-style-image:url('/img/inst.png') 
+}
+
+.App-social {
+  display: flex;
+  align-items: center;
+  font-size: 15px;
+  color: #616161;
+  line-height: 24px;
+  padding-left: 40px;
+  background-color: aliceblue;
+}
+
+li {
+  list-style-type: none;
+}
+
+.App-nav {
+  display: flex;
+  padding-left: 40px;
+  background-color: azure;
+}
+.App-nav a {
+	color: #616161;
+	font-size: 15px;
+	display: block;
+	padding: 7px 10px;
+	border-radius: 3px;
+	text-transform: uppercase;
+  text-decoration: none;
+  margin-left: 3px;
+	border: 1px solid transparent;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
