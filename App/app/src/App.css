@@ -4,10 +4,20 @@
 
 .App-logo {
   animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
+  height: 10vmin;
 }
 
 .App-header {
+  background-color: #282c34;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-footer {
   background-color: #282c34;
   display: flex;
   flex-direction: column;
@@ -33,12 +43,11 @@ list-style-image:url('/img/inst.png')
 
 .App-social {
   display: flex;
-  align-items: center;
+  justify-content: space-around;
   font-size: 15px;
-  color: #616161;
+  color: white;
   line-height: 24px;
-  padding-left: 40px;
-  background-color: aliceblue;
+  background-color: #4b515e;
 }
 
 li {
@@ -48,10 +57,10 @@ li {
 .App-nav {
   display: flex;
   padding-left: 40px;
-  background-color: azure;
+  background-color: #50596d;
 }
 .App-nav a {
-	color: #616161;
+	color: white;
 	font-size: 15px;
 	display: block;
 	padding: 7px 10px;

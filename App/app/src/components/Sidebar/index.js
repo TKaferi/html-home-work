@@ -1,4 +1,6 @@
 import React from 'react';
+import Nav from '../Nav';
+import Logo from '../Logo';
 
 export default () => {
   return (
@@ -9,6 +11,8 @@ export default () => {
     <li className="lin">LinkedIn</li>
     <li className="inst">Instagram</li>
   </ul>
+  <Logo />
+  <Nav />
   
   </div>
   )

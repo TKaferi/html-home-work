@@ -4,6 +4,8 @@ import './App.css';
 import Header from './components/Header';
 import Nav from './components/Nav';
 import Sidebar from './components/Sidebar';
+import Footer from './components/Footer';
+
 
 class App extends Component {
   render() {
@@ -12,6 +14,8 @@ class App extends Component {
       <Header />
       <Nav />
       <Sidebar />
+      <Footer />
+      
 
 
       {/*<header className="App-header">
