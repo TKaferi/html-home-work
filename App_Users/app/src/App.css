@@ -1,0 +1,66 @@
+#root {
+  margin: 15px;
+}
+
+.App {
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.App-logo {
+  /*animation: App-logo-spin infinite 20s linear;*/
+  height: 6vmin;
+}
+
+.App-header {
+  background-color: #282c34;
+  display: flex;
+  align-items: center;
+  font-size: calc(8px + 1vmin);
+  color: white;
+  padding: 10px;
+  
+}
+.App-search {
+margin-top: 10px;
+}
+
+.input {
+  height: 30px;
+  width: 99%;
+  
+}
+.avatarUser {
+  width: 50px;
+  height: 50px;
+  max-width: 100%;
+  object-fit: cover;
+}
+
+.container {
+  display: flex;
+  margin-top: 40px;
+  align-items: center;
+}
+.list {
+  display: flex;
+  flex: 3
+}
+.active_user {
+  display: flex;
+  flex: 1
+}
+
+
+.App-link {
+  color: #61dafb;
+}
+
+/*@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}*/

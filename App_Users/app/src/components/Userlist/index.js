@@ -19,8 +19,8 @@ class UserList extends Component {
           src={img}
           className='avatarUser'
         />
-        <p>{last_name}</p>
         <p>{first_name}</p>
+        <p>{age}</p>
       </div>
     )
   }
@@ -31,7 +31,8 @@ class UserList extends Component {
     } = this.props;
 
     return (
-      <div>
+      <div className="list">
+      
         {userList.map(item => this.itemUser(item))}
       </div>
     );

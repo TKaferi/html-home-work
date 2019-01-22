@@ -1,16 +1,15 @@
 import React, { Component } from 'react';
 
 
-class UserList extends Component {
+class ActiveUser extends Component {
 
   itemUser = (user) => {
     const {
       id,
       img,
-      age, 
+      age,
       first_name,
     } = user;
-
 
     return (
       <div key={id}>
@@ -19,11 +18,13 @@ class UserList extends Component {
           src={img}
           className='avatarUser'
         />
-        <p>{last_name}</p>
         <p>{first_name}</p>
+        <p>{age}</p>
       </div>
     )
   }
+
+
 
   render() {
     const {
@@ -31,11 +32,11 @@ class UserList extends Component {
     } = this.props;
 
     return (
-      <div>
+      <div className="active_user">
         {userList.map(item => this.itemUser(item))}
       </div>
     );
   }
 };
 
-export default UserList;
+export default ActiveUser;
